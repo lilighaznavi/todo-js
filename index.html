@@ -14,6 +14,53 @@
     <link rel="apple-touch-icon" href="./images/favicon-180px.png" />
   </head>
   <body>
+    <div class="container">
+      <header class="header">
+        <h1>Todo List</h1>
+        <p>Stay organized and get things done.</p>
+      </header>
+
+      <main class="main">
+        <form class="form">
+          <input
+            type="text"
+            placeholder="Add a new task..."
+            aria-label="New task"
+          />
+          <button type="submit" aria-label="Add task">+</button>
+        </form>
+
+        <menu class="filters">
+          <li><button class="btn-all">All</button></li>
+          <li><button class="btn-active">Active</button></li>
+          <li><button class="btn-completed">Completed</button></li>
+        </menu>
+
+        <ul class="items">
+          <li class="item">
+            <input type="checkbox" id="task-1" />
+            <label for="task-1">Review project requirements</label>
+            <button type="button" aria-label="Delete task">-</button>
+          </li>
+          <li class="item">
+            <input type="checkbox" id="task-2" />
+            <label for="task-2">Write project documentation</label>
+            <button type="button" aria-label="Delete task">-</button>
+          </li>
+          <li class="item">
+            <input type="checkbox" id="task-3" />
+            <label for="task-3">Write project documentation</label>
+            <button type="button" aria-label="Delete task">-</button>
+          </li>
+        </ul>
+      </main>
+
+      <footer>
+        <p class="status">3 of 10 tasks completed</p>
+        <button>Clear All</button>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
